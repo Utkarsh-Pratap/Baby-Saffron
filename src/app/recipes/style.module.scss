@@ -1,0 +1,8 @@
+.bgImg {
+  background: #f6f6f6 url('/recipe/avcado_bg.png') no-repeat right bottom;
+
+  @media (max-width: 768px) {
+    background-position: top right;
+    background-size: 40%;
+  }
+}

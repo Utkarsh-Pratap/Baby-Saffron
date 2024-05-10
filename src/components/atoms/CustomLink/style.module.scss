@@ -1,0 +1,48 @@
+.cus_link {
+  @apply overflow-x-hidden relative flex items-center gap-2 flex-wrap w-max;
+
+  &.nav {
+    @apply uppercase font-semibold text-primary-red;
+
+    &::after,
+    &::before {
+      @apply bg-primary-red;
+    }
+  }
+
+  &.footer {
+    @apply text-black text-sm 2xl:text-base;
+
+    &::after,
+    &::before {
+      @apply bg-black;
+    }
+  }
+
+  &::after,
+  &::before {
+    @apply absolute w-full h-[2px] bottom-0 left-0;
+    content: '';
+    transition: all 0.2s ease-in-out;
+  }
+
+  &::after {
+    @apply origin-left translate-x-[-110%];
+  }
+
+  &::before {
+    @apply origin-right translate-x-[110%] delay-[0.2s];
+  }
+
+  &:hover::after,
+  &:hover::before {
+    @apply translate-x-0;
+  }
+
+  &.active {
+    &::after,
+    &::before {
+      @apply translate-x-0;
+    }
+  }
+}

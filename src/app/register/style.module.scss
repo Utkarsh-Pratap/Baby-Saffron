@@ -1,0 +1,20 @@
+.register {
+  @apply mb-2 pt-10 pb-32 sm:mt-10;
+  background-image: linear-gradient(180deg, #fff 50%, #f7f7f7 50%);
+
+  &__form {
+    @apply w-full flex flex-col gap-5 sm:grid sm:grid-cols-2 sm:gap-x-5;
+  }
+
+  &__input_box {
+    @apply flex flex-col gap-2;
+
+    label {
+      @apply text-auth-label font-normal xs:font-semibold;
+    }
+
+    input {
+      @apply w-full bg-transparent transition-all border border-auth-register-br rounded-md py-2 px-3 text-lg outline-none sm:bg-auth-inp-bg sm:border-0;
+    }
+  }
+}

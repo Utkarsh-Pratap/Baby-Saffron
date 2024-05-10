@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './utitlity';
+
+.product_img {
+  figcaption {
+    @apply transition-all translate-y-[50%] opacity-0;
+  }
+  &:hover figcaption {
+    @apply translate-y-0 opacity-100;
+  }
+}

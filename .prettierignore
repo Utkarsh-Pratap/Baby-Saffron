@@ -1,0 +1,4 @@
+# Files / directories which we dont to format with prettier
+dist
+.next
+node_modules

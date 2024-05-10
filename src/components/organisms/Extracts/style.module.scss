@@ -1,0 +1,7 @@
+.extract_btn {
+  @apply pb-5 border-b-2 border-transparent outline-none transition-all font-medium text-[#616161];
+
+  &.active {
+    @apply border-primary-red text-primary-red;
+  }
+}

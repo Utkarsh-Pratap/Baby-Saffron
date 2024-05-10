@@ -1,0 +1,28 @@
+.hallmark {
+  @apply w-full flex flex-col pb-20;
+
+  h2 {
+    @apply text-3xl font-serif text-primary-red pb-10 md:text-5xl xl:pb-16;
+  }
+
+  h4 {
+    @apply text-black text-2xl font-medium;
+
+    span {
+      @apply text-hallmark-grey block text-xl md:text-base font-normal;
+    }
+
+    &.red {
+      @apply text-primary-red lg:text-center;
+    }
+  }
+
+  li {
+    img {
+      @apply rounded-[50px] w-[70px];
+      box-shadow: 0 2px 1.9px rgb(0 0 0 / 3%), 0 6.4px 4.8px rgb(0 0 0 / 5%),
+        0 14.4px 9.5px rgb(0 0 0 / 5%), 0 28.3px 17.5px rgb(0 0 0 / 5%),
+        0 54.4px 33.4px rgb(0 0 0 / 6%), 0 100px 80px rgb(0 0 0 / 6%);
+    }
+  }
+}

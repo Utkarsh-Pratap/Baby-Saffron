@@ -1,0 +1,11 @@
+.last_menu_row {
+  @apply py-5;
+
+  &:not(:last-child) {
+    @apply border-b border-slate-300;
+  }
+
+  .headings {
+    @apply text-primary-red uppercase font-medium text-2xl;
+  }
+}

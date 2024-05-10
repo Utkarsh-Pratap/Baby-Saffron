@@ -1,0 +1,16 @@
+.terms_conditions {
+  @apply flex my-16 relative text-black xs:my-24 lg:gap-5 2xl:gap-14;
+
+  h1 {
+    @apply font-serif text-3xl sm:text-5xl pb-10 sm:pb-28;
+  }
+
+  h2 {
+    @apply text-xl font-semibold sm:text-3xl;
+  }
+
+  p {
+    @apply text-sm sm:text-base;
+    line-height: 2;
+  }
+}
